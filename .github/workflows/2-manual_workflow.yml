@@ -1,0 +1,16 @@
+name: first workflow
+
+on:
+  workflow_dispatch: 
+
+ 
+
+jobs:
+  first_workflows:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: first step
+        run: |
+          echo "hello, worl!"
+          echo "hello, agai!"
