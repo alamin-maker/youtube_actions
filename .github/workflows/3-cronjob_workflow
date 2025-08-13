@@ -1,0 +1,17 @@
+name: manual workflow
+
+on:
+  schedule:
+     -cron: '*/5 * * * *' # Runs in every 5 minutes
+
+ 
+
+jobs:
+  cron_workflows:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: cron_workflows
+        run: |
+          echo "hello,cronjob"
+          echo "hello, agaian"
